@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<!-- <package name="default" extends="struts-default">
+		<action name="user-list"
+			class="com.usermanagement.action.UserManagementAction"
+			method="getList">
+			<result name="list">/user-list.jsp</result>
+		</action>
+		<action name="adduser">
+			<result>/user-form.jsp</result>
+		</action>
+
+		<action name="edit"
+			class="com.usermanagement.action.UserManagementAction"
+			method="showEditUser">
+			<result name="form">/user-form.jsp</result>
+		</action>
+
+		<action name="update"
+			class="com.usermanagement.action.UserManagementAction"
+			method="updateUser">
+			<result name="list">/user-list.jsp</result>
+		</action>
+
+	<action name="delete"
+			class="com.usermanagement.action.UserManagementAction"
+			method="deleteUser">
+			<result name="list">/user-list.jsp</result>
+		</action>
+		
+			<action name="create"
+			class="com.usermanagement.action.UserManagementAction"
+			method="createuser">
+			<result name="list">/user-list.jsp</result>
+		</action>
+	</package> -->
+	
+	
+	<package name="default" extends="struts-default">
+		<action name="user-list"
+			class="com.usermanagement.action.hibernate.UserManagementAction"
+			method="getList">
+			<result name="list">/user-list.jsp</result>
+		</action>
+		<action name="adduser">
+			<result>/user-form.jsp</result>
+		</action>
+
+		<action name="edit"
+			class="com.usermanagement.action.hibernate.UserManagementAction"
+			method="showEditUser">
+			<result name="form">/user-form.jsp</result>
+		</action>
+
+		<action name="update"
+			class="com.usermanagement.action.hibernate.UserManagementAction"
+			method="updateUser">
+			<result name="list">/user-list.jsp</result>
+		</action>
+
+	<action name="delete"
+			class="com.usermanagement.action.hibernate.UserManagementAction"
+			method="deleteUser">
+			<result name="list">/user-list.jsp</result>
+		</action>
+		
+			<action name="create"
+			class="com.usermanagement.action.hibernate.UserManagementAction"
+			method="createuser">
+			<result name="list">/user-list.jsp</result>
+		</action>
+	</package>
+</struts>
